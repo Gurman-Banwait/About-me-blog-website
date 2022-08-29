@@ -1,0 +1,445 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(212, 40, 100, 0.7), rgba(4,9,30,0.7)), url(Images/Synthbackground.gif);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav
+{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: top;
+}
+
+nav img
+{
+    width: 150px;
+}
+
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto; 
+    transition: 0.3s;
+}
+
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+
+.text-box
+{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1
+{
+    font-size: 62px;
+}
+
+.text-box p
+{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn
+{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover
+{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: .5s;
+}
+
+
+nav .fa
+{
+    display: none;
+}
+
+
+@media(max-width: 700px)
+{
+    .text-box h1
+    {
+        font-size: 20px;
+    }
+    
+    .nav-links ul li
+    {
+        display: block;
+    }
+    
+    .nav-links
+    {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: .5s;
+    }
+    
+    nav .fa
+    {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        cursor: pointer; 
+    }
+    
+    .nav-links ul
+    {
+        padding: 30px;
+    }
+    
+}
+
+
+
+/*----- About ----*/
+
+.About
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px; 
+}
+
+h1
+{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p
+{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+
+.row
+{
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.PersonalInfo
+{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+h3
+{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+.PersonalInfo:hover
+{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+
+/* @media for the About me section for the small screen */
+@media(max-width: 700px)
+{
+    .row
+    {
+        flex-direction: column;
+    }
+}
+
+
+/* BLOG  */ 
+.Blog
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.CODs
+{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.CODs img
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.layer
+{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.layer:hover
+{
+    background: rgba(80, 224, 196, 0.79);
+}
+
+.layer h3
+{
+    width: 100%;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.layer:hover h3
+{
+    bottom: 50%;
+    opacity: 2;
+}
+
+
+.CodRows
+{
+    margin-top: -1.8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.BO4Info
+{
+    flex-basis:31%;
+    background: #40fc7a;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.BO4Info:hover
+{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+
+.CWInfo
+{
+    flex-basis:31%;
+    background: #59ff7f;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.CWInfo:hover
+{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+
+.WW2Info
+{
+    flex-basis:31%;
+    background: #f2fa8c;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.WW2Info:hover
+{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.MWInfo
+{
+    flex-basis:31%;
+    background: #ff9a9a;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.MWInfo:hover
+{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.VANGUARDInfo
+{
+    flex-basis:31%;
+    background: #ff0000;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.VANGUARDInfo:hover
+{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px)
+{
+    .CodRows
+    {
+        flex-direction: column;
+    }
+}
+
+
+/*  Contact  */
+.box h3
+{
+    text-align: left;
+}
+
+.Contact
+{
+    position: relative;
+    min-height: 100vh; 
+    padding: 50px 100px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    background-image: url(Images/japan.gif);
+    background-size: cover;
+}
+
+
+.ContactContent
+{
+    max-width: 1000px; 
+    text-align: center; 
+    font-size: 36px; 
+}
+
+.container
+{
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 30px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
